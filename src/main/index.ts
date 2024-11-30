@@ -13,12 +13,9 @@ function createWindow(): void {
     ...(process.platform === 'linux' ? { icon } : {}),
     center: true,
     title: 'Directree',
-    // frame: false,
-    vibrancy: 'fullscreen-ui', // on MacOS
-    backgroundMaterial: 'acrylic', // on Windows 11
+    // vibrancy: 'fullscreen-ui', // on MacOS
+    // backgroundMaterial: 'acrylic', // on Windows 11
     visualEffectState: 'active',
-    // titleBarStyle: 'hidden',
-    // trafficLightPosition: { x: 15, y: 10 },
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: true, // sandbox renderer
